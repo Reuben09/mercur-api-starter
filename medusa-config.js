@@ -42,11 +42,15 @@ const plugins = [
 	},
 	{
 		resolve: '@rigby-software-house/mercurjs-vendor',
-		options: {},
+		options: {
+			      serve: process.env.NODE_ENV === "development",
+		},
 	},
 	{
 		resolve: '@medusajs/admin',
-		options: {},
+		options: {
+			      serve: process.env.NODE_ENV === "development",
+		},
 	},
 ];
 
